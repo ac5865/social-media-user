@@ -1,0 +1,7 @@
+CREATE TABLE friends(
+   user_id INT NOT NULL,
+   friend_ID INT NOT NULL,
+   PRIMARY KEY(User_ID,Friend_ID),
+   FOREIGN KEY(user_id) references users(USERID),
+   FOREIGN KEY(friend_id) references users(USERID)
+);
