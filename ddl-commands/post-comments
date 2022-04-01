@@ -1,0 +1,10 @@
+CREATE TABLE POST_COMMENTS(
+  Comment_ID INT NOT NULL,
+  Post_ID INT NOT NULL,
+  Commented_Date DATE,
+  Comment_Content VARCHAR(50),
+  Commented_User_ID INT NOT NULL,
+  PRIMARY KEY(Comment_ID),
+  FOREIGN KEY(Post_ID) references posts(post_id),
+  FOREIGN KEY(Commented_User_ID) references users(USERID)
+ );
