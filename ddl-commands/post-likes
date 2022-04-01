@@ -1,0 +1,7 @@
+CREATE TABLE POSTLIKES(
+  post_ID INT NOT NULL,
+  liked_user_ID INT NOT NULL,
+  PRIMARY KEY(post_ID,liked_user_ID),
+  FOREIGN KEY(post_ID) references posts(post_id),
+  FOREIGN KEY(liked_user_ID) references users(USERID)
+);
