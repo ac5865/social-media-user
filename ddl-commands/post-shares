@@ -1,0 +1,8 @@
+CREATE TABLE post_shares(
+  Post_ID INT NOT NULL, 
+  
+  Shared_User_ID INT NOT NULL,
+  PRIMARY KEY(Post_ID,Shared_User_ID),
+  FOREIGN KEY(Post_ID) references posts(post_id),
+  FOREIGN KEY(Shared_User_ID) references users(userid)
+);
