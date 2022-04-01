@@ -1,0 +1,8 @@
+CREATE TABLE messages(
+user_id INT PRIMARY KEY,
+friend_user_id INT,
+message_date DATE,
+message_content VARCHAR(50),
+FOREIGN KEY(user_id) references users(userid),
+FOREIGN KEY(friend_user_id) references users(userid)
+);
