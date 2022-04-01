@@ -1,0 +1,12 @@
+-- insert some values
+INSERT INTO users VALUES (10111, 'justin@gmail.com', 9190111000, 'abcde@21', 'Justin',
+'Foley', 'LA', 900013, '1991-01-03', 'M');
+INSERT INTO users VALUES (10112, 'jessica@hotmail.com', 7331190123, 'jejjj', 'Jessica',
+'Edgar', 'Texas', 123000, '1992-03-01', 'F'),
+(10113, 'alex@hotmail.com', 7331190123, 'aleejjj', 'Alex',
+'Warren', 'Texas', 123000, '1991-02-11', 'M'),
+(10114, 'taylor@hotmail.com', 7331190123, 't123jj', 'Taylor',
+'Smith', 'New York', 912000, '1993-12-11', 'M');
+
+-- fetch some values
+SELECT * FROM users;
