@@ -1,0 +1,8 @@
+-- insert values
+INSERT INTO POSTS VALUES
+(101, 10111, '2022-02-01', 'Good morning friends!'),
+(102, 10111, '2022-03-03', 'Hello March'),
+(119, 10114, '2022-01-09', 'Happy Thursday');
+
+-- fetch values
+SELECT FNAME, POST_ID FROM USERS,POSTS WHERE USERS.USERID = POSTS.POSTED_USER_ID;
