@@ -1,0 +1,103 @@
+SELECT * from users;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"
+
+SELECT userid, email, fname, lname, pincode, gender
+from users
+where fname in
+(select fname from users where city='LA');
+
+101	"jess@hotmail.com"	"Justin"	"Foley"		"900013"	"M"
+104	"chan@gmail.com"	"Chandler"	"Bing"		"810013"	"M"
+109	"alex@gmail.com"	"Alex"		"Martin"	"800123"	"M"
+111	"zp@gmail.com"		"Zoe"		"Pliea"		"800123"	"F"
+
+SELECT post_id from posts
+where post_id in 
+(SELECT post_id from posts
+where posted_user_id=101);
+
+443
+
+SELECT post_id from posts
+where post_id in 
+(SELECT post_id from posts);
+
+443
+542
+422
+546
+
+SELECT email, fname, city, pincode from users
+where userid > 
+(SELECT userid from users
+where userid = 103);
+
+"phoebe12@hotmail.com"	"Phoebe"	"Denver"	"912300"
+"ross@gmail.com"	"Ross"		"Dallas"	"123000"
+"monica@gmail.com"	"Monica"	"New York"	"810013"
+"chan@gmail.com"	"Chandler"	"LA"		"810013"
+"gunther@gmail.com"	"Gunther"	"New York"	"602120"
+"alex@gmail.com"	"Alex"		"LA"		"800123"
+"px@gmail.com"		"Pierson"	"Denver"	"710123"
+"zp@gmail.com"		"Zoe"		"LA"		"800123"
+
+SELECT * from users;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"
+
+SELECT userid, MIN(pincode) FROM users
+GROUP BY userid HAVING MIN(pincode)>
+(SELECT MIN(pincode) FROM users WHERE userid=109);
+
+101	"900013"
+104	"810013"
+105	"810013"
+106	"912300"
+
+SELECT * FROM users WHERE pincode=
+(SELECT MIN(pincode) FROM users);
+
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"		"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"		"Jessica"	"Edgar"		"Chicago"	"123000"	"1992-03-01"	"F"
+
+SELECT userid FROM users
+WHERE pincode=
+(SELECT MAX(pincode) FROM users);
+
+106
+
+SELECT userid, email, fname
+FROM users
+WHERE pincode>
+(SELECT MIN(pincode) FROM users);
+
+106	"phoebe12@hotmail.com"	"Phoebe"
+101	"jess@hotmail.com"	"Justin"
+105	"monica@gmail.com"	"Monica"
+103	"joey@gmail.com"	"Joey"
+104	"chan@gmail.com"	"Chandler"
+108	"gunther@gmail.com"	"Gunther"
+109	"alex@gmail.com"	"Alex"
+110	"px@gmail.com"		"Pierson"
+111	"zp@gmail.com"		"Zoe"
