@@ -1,0 +1,55 @@
+select * from users 
+order by userid;
+
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"		"LA"		"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"		"Jessica"	"Edgar"		"Chicago"	"123000"	"1992-03-01"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"		"Joey"		"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"		"LA"		"810013"	"1992-11-12"	"M"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"		"New York"	"810013"	"1992-04-02"	"F"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"		"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"		"Martin"	"LA"		"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"		9900011222	"px124"		"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"		7286549000	"zpp3"		"Zoe"		"Pliea"		"LA"		"800123"	"1992-08-11"	"F"
+
+SELECT userid, fname, lname, dob FROM users
+where lname like 'B%';
+
+106	"Phoebe"	"Buffay"	"1994-01-02"
+105	"Monica"	"Bing"		"1992-04-02"
+104	"Chandler"	"Bing"		"1992-11-12"
+
+SELECT userid, pass_word fname, lname, dob FROM users
+where pass_word like '%@%' or pass_word like '%_%';
+
+106	"phoebs"	"Buffay"	"1994-01-02"
+107	"ross_12"	"Geller"	"1991-08-09"
+101	"abcde@21"	"Foley"		"1991-01-03"
+102	"jejjj"		"Edgar"		"1992-03-01"
+105	"mon@21"	"Bing"		"1992-04-02"
+103	"joyyy"		"Tribiani"	"1993-03-02"
+104	"chan12"	"Bing"		"1992-11-12"
+108	"gunther1"	"Steven"	"1991-09-10"
+109	"alex654"	"Martin"	"1990-08-11"
+110	"px124"		"Xavier"	"1993-01-13"
+111	"zpp3"		"Pliea"		"1992-08-11"
+
+SELECT userid fname, lname, dob FROM users
+where gender='F';
+
+106	"Buffay"	"1994-01-02"
+102	"Edgar"		"1992-03-01"
+105	"Bing"		"1992-04-02"
+110	"Xavier"	"1993-01-13"
+111	"Pliea"		"1992-08-11"
+
+SELECT * from posts
+where post_date > '2022-01-31';
+
+443	101	"2022-02-01"	"Good morning friends!"
+542	106	"2022-03-02"	"Welcome to my page"
+422	102	"2022-03-03"	"Hello Feb"
+
+
+
