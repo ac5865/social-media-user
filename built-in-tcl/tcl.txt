@@ -1,0 +1,85 @@
+select * from users;
+
+insert into users 
+values(108, 'gunther@gmail.com', 9000012345, 'gunther1', 'Gunther', 'Steven', 'New York', 602120, '1991-09-10', 'M');
+
+savepoint s1;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"
+
+
+insert into users 
+values(109, 'alex@gmail.com', 8900032123, 'alex654', 'Alex', 'Martin', 'LA', 800123, '1990-08-11', 'M' );
+
+insert into users 
+values(110, 'px@gmail.com', 9900011222, 'px124', 'Pierson', 'Xavier', 'Denver', 710123, '1993-01-13', 'F' );
+
+insert into users 
+values(111, 'zp@gmail.com', 7286549000, 'zpp3', 'Zoe', 'Pliea', 'LA', 800123, '1992-08-11', 'F' );
+
+select * from users;
+
+rollback to s1;
+
+select * from users;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+
+insert into users 
+values(109, 'alex@gmail.com', 8900032123, 'alex654', 'Alex', 'Martin', 'LA', 800123, '1990-08-11', 'M' );
+
+insert into users 
+values(110, 'px@gmail.com', 9900011222, 'px124', 'Pierson', 'Xavier', 'Denver', 710123, '1993-01-13', 'F' );
+
+insert into users 
+values(111, 'zp@gmail.com', 7286549000, 'zpp3', 'Zoe', 'Pliea', 'LA', 800123, '1992-08-11', 'F' );
+
+commit;
+
+select * from users;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"
+
+rollback;
+
+select * from users;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"
+
