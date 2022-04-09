@@ -1,0 +1,172 @@
+SELECT * from users cross join friends;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	101	103
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	101	103
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	101	103
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	101	103
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	101	103
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	101	103
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	101	103
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	101	103
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	101	103
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	101	103
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	101	103
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	106	104
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	106	104
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	106	104
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	106	104
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	106	104
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	106	104
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	106	104
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	106	104
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	106	104
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	106	104
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	106	104
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	102	101
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	102	101
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	102	101
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	102	101
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	102	101
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	102	101
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	102	101
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	102	101
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	102	101
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	102	101
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	102	101
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	107	106
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	107	106
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	107	106
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	107	106
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	107	106
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	107	106
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	107	106
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	107	106
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	107	106
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	107	106
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	107	106
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	104	103
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	104	103
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	104	103
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	104	103
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	104	103
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	104	103
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	104	103
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	104	103
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	104	103
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	104	103
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	104	103
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	103	102
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	103	102
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	103	102
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	103	102
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	103	102
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	103	102
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	103	102
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	103	102
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	103	102
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	103	102
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	103	102
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	105	107
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	105	107
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	105	107
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	105	107
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	105	107
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	105	107
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	105	107
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	105	107
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	105	107
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	105	107
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	105	107
+
+SELECT * from users, posts
+where users.userid = posts.posted_user_id;
+
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"		"LA"		"900013"	"1991-01-03"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+102	"jessica@hotmail.com"	7331190123	"jejjj"		"Jessica"	"Edgar"		"Chicago"	"123000"	"1992-03-01"	"F"	422	102	"2022-03-03"	"Hello Feb"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"		"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+
+SELECT * from users natural join posts;
+
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	443	101	"2022-02-01"	"Good morning friends!"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	443	101	"2022-02-01"	"Good morning friends!"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	443	101	"2022-02-01"	"Good morning friends!"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	443	101	"2022-02-01"	"Good morning friends!"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	443	101	"2022-02-01"	"Good morning friends!"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	542	106	"2022-03-02"	"Welcome to my page"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	422	102	"2022-03-03"	"Hello Feb"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	422	102	"2022-03-03"	"Hello Feb"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	422	102	"2022-03-03"	"Hello Feb"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	422	102	"2022-03-03"	"Hello Feb"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	422	102	"2022-03-03"	"Hello Feb"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	422	102	"2022-03-03"	"Hello Feb"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	422	102	"2022-03-03"	"Hello Feb"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	422	102	"2022-03-03"	"Hello Feb"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	422	102	"2022-03-03"	"Hello Feb"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	422	102	"2022-03-03"	"Hello Feb"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	422	102	"2022-03-03"	"Hello Feb"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	546	107	"2022-01-03"	"Happy Thursday"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	546	107	"2022-01-03"	"Happy Thursday"
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"	546	107	"2022-01-03"	"Happy Thursday"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"	546	107	"2022-01-03"	"Happy Thursday"
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"	546	107	"2022-01-03"	"Happy Thursday"
+
+SELECT * from users left outer join posts on
+(users.userid = posts.posted_user_id);
+
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	422	102	"2022-03-03"	"Hello Feb"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"				
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"				
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"				
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"				
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"				
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"				
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"				
+
+SELECT * from users right outer join posts on
+(users.userid = posts.posted_user_id);
+
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	422	102	"2022-03-03"	"Hello Feb"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+
+SELECT * from users full outer join posts on
+(users.userid = posts.posted_user_id);
+
+101	"jess@hotmail.com"	9190111000	"abcde@21"	"Justin"	"Foley"	"LA"	"900013"	"1991-01-03"	"M"	443	101	"2022-02-01"	"Good morning friends!"
+106	"phoebe12@hotmail.com"	7890923134	"phoebs"	"Phoebe"	"Buffay"	"Denver"	"912300"	"1994-01-02"	"F"	542	106	"2022-03-02"	"Welcome to my page"
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"	"Chicago"	"123000"	"1992-03-01"	"F"	422	102	"2022-03-03"	"Hello Feb"
+107	"ross@gmail.com"	5611261666	"ross_12"	"Ross"	"Geller"	"Dallas"	"123000"	"1991-08-09"	"M"	546	107	"2022-01-03"	"Happy Thursday"
+109	"alex@gmail.com"	8900032123	"alex654"	"Alex"	"Martin"	"LA"	"800123"	"1990-08-11"	"M"				
+104	"chan@gmail.com"	9045263444	"chan12"	"Chandler"	"Bing"	"LA"	"810013"	"1992-11-12"	"M"				
+108	"gunther@gmail.com"	9000012345	"gunther1"	"Gunther"	"Steven"	"New York"	"602120"	"1991-09-10"	"M"				
+110	"px@gmail.com"	9900011222	"px124"	"Pierson"	"Xavier"	"Denver"	"710123"	"1993-01-13"	"F"				
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"	"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"				
+111	"zp@gmail.com"	7286549000	"zpp3"	"Zoe"	"Pliea"	"LA"	"800123"	"1992-08-11"	"F"				
+105	"monica@gmail.com"	9134111000	"mon@21"	"Monica"	"Bing"	"New York"	"810013"	"1992-04-02"	"F"				
