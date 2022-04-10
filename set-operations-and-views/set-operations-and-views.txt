@@ -1,0 +1,92 @@
+SELECT posted_user_id from posts union SELECT userid from users; 
+
+107
+110
+101
+108
+103
+104
+105
+109
+106
+102
+111
+
+SELECT posted_user_id from posts union all SELECT userid from users; 
+
+101
+106
+102
+107
+106
+107
+101
+102
+105
+103
+104
+108
+109
+110
+111
+
+SELECT POST_ID FROM POSTS INTERSECT SELECT POST_ID FROM POSTLIKES;
+
+542
+443
+422
+
+CREATE VIEW CONTACTS AS 
+SELECT USERID, EMAIL, PHONE, FNAME, LNAME FROM USERS;
+
+SELECT * FROM CONTACTS;
+
+106	"phoebe12@hotmail.com"	7890923134	"Phoebe"	"Buffay"
+107	"ross@gmail.com"	5611261666	"Ross"		"Geller"
+101	"jess@hotmail.com"	9190111000	"Justin"	"Foley"
+102	"jessica@hotmail.com"	7331190123	"Jessica"	"Edgar"
+105	"monica@gmail.com"	9134111000	"Monica"	"Bing"
+103	"joey@gmail.com"	9012233444	"Joey"		"Tribiani"
+104	"chan@gmail.com"	9045263444	"Chandler"	"Bing"
+108	"gunther@gmail.com"	9000012345	"Gunther"	"Steven"
+109	"alex@gmail.com"	8900032123	"Alex"		"Martin"
+110	"px@gmail.com"		9900011222	"Pierson"	"Xavier"
+111	"zp@gmail.com"		7286549000	"Zoe"		"Pliea"
+
+CREATE VIEW chicago_people AS
+SELECT * FROM users
+WHERE city='Chicago';
+
+SELECT * FROM chicago_people;
+
+102	"jessica@hotmail.com"	7331190123	"jejjj"	"Jessica"	"Edgar"		"Chicago"	"123000"	"1992-03-01"	"F"
+103	"joey@gmail.com"	9012233444	"joyyy"	"Joey"		"Tribiani"	"Chicago"	"127680"	"1993-03-02"	"M"
+
+CREATE VIEW user_details AS
+SELECT userid, phone, fname, lname FROM users;
+
+SELECT * FROM user_details;
+
+106	7890923134	"Phoebe"	"Buffay"
+107	5611261666	"Ross"		"Geller"
+101	9190111000	"Justin"	"Foley"
+102	7331190123	"Jessica"	"Edgar"
+105	9134111000	"Monica"	"Bing"
+103	9012233444	"Joey"		"Tribiani"
+104	9045263444	"Chandler"	"Bing"
+108	9000012345	"Gunther"	"Steven"
+109	8900032123	"Alex"		"Martin"
+110	9900011222	"Pierson"	"Xavier"
+111	7286549000	"Zoe"		"Pliea"
+
+CREATE VIEW user_details AS
+SELECT userid, phone, fname, lname FROM users
+WHERE CITY NOT IN ('LA', 'Chicago');
+
+SELECT * FROM user_details;
+
+106	7890923134	"Phoebe"	"Buffay"
+107	5611261666	"Ross"		"Geller"
+105	9134111000	"Monica"	"Bing"
+108	9000012345	"Gunther"	"Steven"
+110	9900011222	"Pierson"	"Xavier"
