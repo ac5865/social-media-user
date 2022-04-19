@@ -1,0 +1,13 @@
+DECLARE
+	total_rows number(2);
+BEGIN
+	UPDATE users
+	SET user_id = user_id + 50;
+	IF sql%notfound THEN
+		dbms_output.put_line('no users selected');
+	ELSIF sql%found THEN
+		total_rows := sql%rowcount;
+		dbms_output.put_line(total rows || 'users selected');
+	END IF;
+END;
+/
