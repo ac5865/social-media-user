@@ -1,0 +1,20 @@
+DECLARE 
+c_id user_has.user_id%type; 
+c_bid user_has.name%type; 
+c_qty user_has.friends%type; 
+ 
+CURSOR c_idk is 
+SELECT user_id,name,friends FROM user_has; 
+BEGIN 
+OPEN c_user; 
+LOOP 
+FETCH c_user into c_id,c_bid,c_qty; 
+EXIT WHEN c_stock%notfound; 
+dbms_output.put_line(c_id); 
+dbms_output.put_line(c_bid); 
+dbms_output.put_line(c_qty); 
+ 
+END LOOP; 
+CLOSE c_stock; 
+END; 
+/
