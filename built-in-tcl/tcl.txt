@@ -1,7 +1,7 @@
 select * from users;
 
 insert into users 
-values(108, 'gunther@gmail.com', 9000012345, 'gunther1', 'Gunther', 'Steven', 'New York', 602120, '1991-09-10', 'M');
+values(108, 'gunther@gmail.com', 9000012345, 'gunther1', 'Gunther', 'Steven', 'New York', 602120, '1991-09-10', 'M');  
 
 savepoint s1;
 
